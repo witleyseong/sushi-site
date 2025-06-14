@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(192, 191, 191);
+}
+#top{
+    max-height: 300px;
+}
+
+#logo img{
+    max-width: auto;
+    max-height: 90px;
+    position: absolute;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    color: rgb(83, 37, 170);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+li a:hover{
+    background-color: #f09090;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    background-position: cover;
+}
+
+.fotos{
+    float: center;
+    width: 25%;
+    padding: 10px;
+    
+}
+
+.row:after{
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+
+.row{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin: 10% 10%;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 60px 20px ;
+}
+.hand{
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hand img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 12px;
+}
+.container{
+    position: absolute;
+    justify-content: right;
+    max-width: 500px;
+    display: flex;
+}
+
+.container h3 {
+    position: absolute;
+    font-size: 24px;    
+    margin-bottom: 20px;
+}
+
+.container p{
+    margin-top: 90px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+    
+}

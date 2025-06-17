@@ -1,101 +1,312 @@
-body{
-    background-color: rgb(192, 191, 191);
+#main {
+    background-color: rgba(11, 12, 12, 0.721);
 }
-#top{
+
+#top {
     max-height: 300px;
 }
 
-#logo img{
+#logo img {
     max-width: auto;
     max-height: 90px;
     position: absolute;
 }
-ul{
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li{
+li {
     float: right;
 }
 
-li a{
+li a {
     display: block;
-    color: rgb(83, 37, 170);
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: x-large;
 }
 
-li a:hover{
+li a:hover {
     background-color: #f09090;
 }
 
-#banner{
+#banner {
     width: 100%;
-    height: 100%;
-    background-position: cover;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 120px;
+    background: url('images/big\ sushi.png') no-repeat;
+    background-size: cover;
+
 }
 
-.fotos{
+
+.fotos {
     float: center;
     width: 25%;
     padding: 10px;
-    
+
 }
 
-.row:after{
+.row:after {
     content: "";
     clear: both;
     display: table;
-    
+
 }
 
-.row{
+.row {
     justify-content: space-around;
     display: flex;
     align-items: center;
     margin: 10% 10%;
 }
 
-.text{
+.text {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
-    padding: 60px 20px ;
-}
-.hand{
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 60px 20px;
 }
 
-.hand img{
-    width: 100%;
-    height: auto;
+#four {
     display: flex;
-    border-radius: 12px;
+    justify-content: space-around;
 }
-.container{
-    position: absolute;
-    justify-content: right;
-    max-width: 500px;
+
+.hand {
     display: flex;
-}
-
-.container h3 {
-    position: absolute;
-    font-size: 24px;    
-    margin-bottom: 20px;
-}
-
-.container p{
-    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    max-width: 90%;
+    flex-wrap: wrap;
+    /* responsivo */
     position: relative;
-    font-size: 16px;
-    line-height: 1.6;
-    
+    /* remove o absolute */
+    padding: 40px 0;
+}
+
+.img-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.text-container {
+    max-width: 500px;
+}
+
+.text-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Our Story Page*/
+#story {
+    background-color: rgba(11, 12, 12, 0.721);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ourStory{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
+.top p {
+    color: white;
+    max-width: 900px;
+    font-size: 25px;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    max-width: 90%;
+    flex-wrap: wrap;
+    /* responsivo */
+    position: relative;
+    /* remove o absolute */
+    padding: 40px 0;
+}
+
+.photo img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.text-container {
+    max-width: 500px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+
+/* LOGIN PAGE CSS */
+
+#login {
+   background-color:rgba(11, 12, 12, 0.721);
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   margin-top: 200px;
+
+}
+
+
+
+section .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+
+.register-link {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
 }

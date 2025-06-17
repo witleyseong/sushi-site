@@ -50,10 +50,11 @@ li a:hover {
 }
 
 
-.fotos {
+section .fotos {
     float: center;
     width: 25%;
     padding: 10px;
+    border-radius: 40px;
 
 }
 
@@ -93,9 +94,7 @@ li a:hover {
     margin: 50px auto;
     max-width: 90%;
     flex-wrap: wrap;
-    /* responsivo */
     position: relative;
-    /* remove o absolute */
     padding: 40px 0;
 }
 
@@ -122,6 +121,39 @@ li a:hover {
 }
 
 .caption {
+    color: white;
+}
+
+section .join{
+    height: 600px;
+    background: url('images/sushi\ club.png') no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#sign-button{
+    width: 200px;
+    font-size: 18px;
+    background-color: red;
+    font-weight: 700px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    
+}
+
+#sign-button, a { 
+    color: white;
+}
+
+footer #right{
+    background-color: rgb(42, 42, 54);
+    text-align: center;
     color: white;
 }
 

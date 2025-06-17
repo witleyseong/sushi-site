@@ -8,7 +8,7 @@
 
 #logo img {
     max-width: auto;
-    max-height: 90px;
+    max-height: 200px;
     position: absolute;
 }
 
@@ -121,6 +121,10 @@ li a:hover {
     color: white;
 }
 
+.caption {
+    color: white;
+}
+
 /* Our Story Page*/
 #story {
     background-color: rgba(11, 12, 12, 0.721);
@@ -130,7 +134,7 @@ li a:hover {
     flex-direction: column;
 }
 
-#ourStory{
+#ourStory {
     text-align: center;
     font-size: 80px;
     color: white;
@@ -172,15 +176,21 @@ li a:hover {
     color: white;
 }
 
+/* Button Home*/
+
+.button-home {
+    border-radius: 20px;
+    cursor: pointer;
+}
 
 /* LOGIN PAGE CSS */
 
 #login {
-   background-color:rgba(11, 12, 12, 0.721);
-   display: flex;
-   justify-content: center;
-   align-content: center;
-   margin-top: 200px;
+    background-color: rgba(11, 12, 12, 0.721);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 200px;
 
 }
 
@@ -309,4 +319,44 @@ button {
 
 .register-link p a:hover {
     text-decoration: underline;
+}
+
+/* MENU PAGE*/
+
+#menu {
+    background-color: rgba(11, 12, 12, 0.721);
+    font-family: Arial, sans-serif;
+    color: #f2f2f2;
+    padding: 40px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #ffe680;
+}
+
+.menu-section {
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-item h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.price {
+    font-weight: bold;
+    color: #90ee90;
 }

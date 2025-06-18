@@ -401,17 +401,11 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.button-home{
-    max-width: 200px;
-    margin-top: 50px;
-
+    margin-top: 90px;
+    margin-bottom: 20px;
+    
 }
 
-form .sign-text {
-    font-size: 18px;
-}
 
-.sign-in {
-    margin-top: 30px;
-}
+
+

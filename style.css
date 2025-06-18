@@ -148,7 +148,7 @@ section .join{
 }
 
 #sign-button, a { 
-    color: white;
+    color: black;
 }
 
 footer #right{
@@ -391,4 +391,27 @@ h2 {
 .price {
     font-weight: bold;
     color: #90ee90;
+}
+
+/* Sign-in page*/
+
+#sign-in {
+    background-color: rgba(11, 12, 12, 0.721);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button-home{
+    max-width: 200px;
+    margin-top: 50px;
+
+}
+
+form .sign-text {
+    font-size: 18px;
+}
+
+.sign-in {
+    margin-top: 30px;
 }
